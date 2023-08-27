@@ -8,18 +8,9 @@ if ($is_form_submitted) {
 	$pseudo = strip_tags($_POST["pseudo"]);
 	$password = strip_tags($_POST["password"]);
 
-	// Read the file with all data to connect to the DB.
-	$db_credentials = json_decode(
-		json: file_get_contents(filename: ".db/db.json"),
-		associative: true
-	);
-
-	// Connection to the DB (PDO: Php Data Object -> an interface for accessing databases).
-	$pdo = new PDO(
-		dsn: "mysql:host=" . $db_credentials["db_host"] . ";port=" . $db_credentials["db_port"] . ";dbname=" . $db_credentials["db_name"],
-		username: $db_credentials["username"],
-		password: $db_credentials["password"]
-	);
+	// Import the function to connect to the DB and use it.
+	require $_SERVER["DOCUMENT_ROOT"] . "/php_db/connection.php";
+	$pdo = connection_db();
 
 	// Prepares and executes an SQL statement.
 	$pdo_statement = $pdo->query(query: "SELECT * FROM User WHERE BINARY pseudo='" . $pseudo . "' AND password=PASSWORD('" . $password . "');");
