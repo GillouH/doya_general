@@ -1,0 +1,13 @@
+# [PHP]
+# PHPUnit
+.phpunit.result.cache
+
+# [Python]
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Environments
+venv/
+
+# mypy
+.mypy_cache/
