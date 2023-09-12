@@ -54,6 +54,10 @@ if ($is_form_submitted) {
 			<input type="submit" value="Test credential !">
 		</fieldset>
 	</form>
+
+	<!-- Sample -->
+	 <h1>Hello Git</h1>
+	<!-- sample -->
 </body>
 
 </html>
