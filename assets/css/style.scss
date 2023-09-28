@@ -1,0 +1,310 @@
+
+// Import SCSS file 
+@import 'media-queries','variables';
+@import '../vendor/bootstrap-icons/bootstrap-icons.css';
+
+// Importing Fonts 
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+// <<===== main Saas ======>> 
+body{
+    min-height: 750px;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Poppins";
+    background: #fff;
+    position: relative;
+}
+ 
+nav{
+    max-width: 100%;
+    margin: 4px 0px 4px 0px;
+    padding: 16px 14px;
+    position: relative;
+    align-items: center;
+    top: 0;
+    // display: flex;
+    min-height: 20px;
+    .logo{
+        position: absolute;
+        left: 10px;
+            img{
+                width: 200px;
+                margin-top: 0px;
+            }
+         }
+    .soc{
+        position: absolute;
+        right: 35px;
+        // display: none;
+        ul{
+            list-style: none;
+            li{
+                display: inline;
+                a{
+                    margin-left: 10px;
+                    margin-top: 0px;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color:  $grey;
+                     &:hover{
+                        color: $button-hover-text-color;
+                     }
+                    
+                }
+            }
+        }
+    }
+}
+
+// Welcome text 
+#welcome{
+    width: 70%;
+    margin-left: 15%;
+    position: absolute;
+    top: 20%;
+    background: transparent;
+    h1{
+        margin-top: -20px;
+        font-size: 60pt;
+        line-height: 80px;
+        background: transparent;
+    }
+    p{  
+        margin-top: -30px;
+        background: transparent;
+        a{
+            background: transparent;
+            font-style: italic;
+        }
+    }
+    
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+        .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 70px;
+        border-radius: 5px;
+        align-items: center;
+            .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            // padding: 73px;
+            cursor: pointer;
+                &:hover{
+                    color: #ff0000;
+                }
+        }
+    }
+    input{
+        padding: 12px 28px;
+        display: flex;
+        margin-top: -20px;
+        justify-content: center;
+        border-radius: 3px;
+    }
+}
+
+// Login Dialogue 
+
+#login {
+    // position: flex;
+    // justify-content: center;
+    label i ,input{
+        display: inline;
+        // width: 60%;
+        padding: 5px;
+    }
+        label i{
+                font-size: 25px;
+                text-align: center;
+                padding: 0px;
+                margin-top: 3px;
+                padding: 3px;
+                text-align: center;
+                line-height: 7px;
+    }
+        #psw, #user{
+            border: none;
+            font-size: 14px;
+            margin-left: 5px;
+            outline: none;
+            color: $grey;
+            margin-top: -10px;
+            border-bottom: 2px solid $button-bg-color;
+            &:hover, &:active{
+                outline: none;
+                border-bottom: 2px solid $button-bg-color;
+            }
+            label i, #psw, #user{
+                padding: 5px 15px;
+                margin: 5px;
+            }
+    }
+}
+
+.blob{
+    right: 0px;
+    top: 10%;
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    height: 80vh;
+    background: #000;
+    // background: url(../images/Blob/Clay_Green0001.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition-duration: .4s;
+    transform: scale(1.8);
+    margin-top: 20vh;
+    animation: blob 45s ease-in-out infinite;
+    @keyframes blob {
+        0%,8%{
+            background: url(../images/Blob/Clay_Green0001.png);
+            
+        }
+        8%,16%{
+            background: url(../images/Blob/Clay_Green0002.png);
+        }
+        16%,25%{
+            background: url(../images/Blob/Clay_Green0003.png);
+        }
+        25%,33%{
+            background: url(../images/Blob/Clay_Green0004.png);
+        }
+        33%,41%{
+            background: url(../images/Blob/Clay_Green0005.png);
+        }
+        41%,50%{
+            background: url(../images/Blob/Clay_Green0006.png);
+        }
+        50%,58%{
+            background: url(../images/Blob/Clay_Green0007.png);
+        }
+        58%,66%{
+            background: url(../images/Blob/Clay_Green0008.png);
+        }
+        66%,75%{
+            background: url(../images/Blob/Clay_Green0009.png);
+        }
+        75%,83%{
+            background: url(../images/Blob/Clay_Green0010.png);
+        }
+        83%,91%{
+            background: url(../images/Blob/Clay_Green0011.png);
+        }
+        91%,100%{
+            background: url(../images/Blob/Clay_Green0012.png);
+        }
+        100%,0%{
+            background: url(../images/Blob/Clay_Green0013.png);
+        }
+    }
+}
+
+// Button 
+button {
+    top: 70%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $button-hover-text-color;
+    color: $button-text-color;
+    border: 2px solid #000814;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 300ms ease;
+    font-style: bold;
+    border: 2px solid $button-hover-text-color;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: $button-bg-color;
+        top: 100%;
+        left: 0;
+        transition: 500ms ease;
+      }
+    &:hover {
+        color: $button-hover-text-color;
+        border: 2px solid $button-bg-color;
+        letter-spacing: 3px;
+        box-shadow: $hover-shadow;
+      }
+    &:hover::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid $button-bg-color;
+      }
+}
+
+#button{
+    color: $button-hover-text-color;
+    box-shadow: $hover-shadow;
+    margin-top: -40px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 300ms ease;
+    border: 2px solid $button-bg-color;
+    background: $button-bg-color;
+     &:hover{
+        cursor: pointer;
+        border: $button-bg-color;
+     }
+}
+// <====== Footer ======>
+
+#footer{
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    background: #000000;
+    color: #fff;
+    top: 90vh;
+    padding: 5px 0px;
+    align-items: center;
+    text-align: center;
+}

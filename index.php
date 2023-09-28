@@ -24,40 +24,66 @@ if ($is_form_submitted) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    include("_header.php");
+?>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Doya General</title>
-</head>
+<!-- navbar  -->
+    <nav>
+        <div class="logo"><a href="#"><img src="assets/images/logo.svg" alt="Not found"></a></div>
+        <div class="soc">
+            <ul>
+                <li><a href="#" class="bi-twitter"></a></li>
+                <li><a href="#" class="bi-facebook"></a></li>
+                <li><a href="#" class="bi-linkedin"></a></li>
+            </ul>
+        </div>
+    </nav>
+<!-- content  -->
 
-<body>
-	<?php
-	if ($is_form_submitted) {
-	?>
-		<h1><?php echo $result_sentence; ?></h1>
-	<?php
-	}
-	?>
-	<form action="" method="post">
-		<fieldset>
-			<legend>Guess a Username and Password !</legend>
-			<p>
-				<label for="user">Username: </label>
-				<input type="text" value="<?php echo $pseudo ? $pseudo : ""; ?>" name="pseudo" id="user" size="20" maxlength="10" required autofocus />
-			</p>
-			<p>
-				<label for="psw">Password: </label>
-				<input type="password" value="<?php echo $pseudo ? $password : ""; ?>" name="password" id="psw" size="20" required />
-			</p>
-			<input type="submit" value="Test credential !">
-		</fieldset>
-	</form>
+<div id="welcome">
+<h1>Join<br>The Creative<br>Community</h1>
+    <!-- <br> -->
+        <p>To Access this website You Must Have an Account, <a href="#">Sign Up</a>
+            
+        </p>
+    </div>
+    
+    
+    <button id="loginButton"> Login </button>
 
-	<!-- Sample -->
-	 <h1>Hello Git</h1>
-	<!-- sample -->
-</body>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal"> <i class="bi-x"></i></span>
+            <h2 style="text-align: center;margin-top: -20px;" >Login</h2><br>
+            <form method="post" id="login">
+                    <legend style="margin-top: -20px;">Guess a Username and Password !</legend>
+                    <p>
+                        <label for="user"><i class="bi-person"></i></label>
+                        <input type="text" placeholder="Username" value="<?php echo $pseudo ? $pseudo : ""; ?>" name="pseudo" id="user" size="20" maxlength="10" required autofocus />
+                    </p>
+                    <p>
+                        <label for="psw"><i class="bi-key"></i> </label>
+                        <input type="password" placeholder="*******" value="<?php echo $pseudo ? $password : ""; ?>" name="password" id="psw" size="20" required />
+                    </p>
+                    <input type="submit" value="Test credential !" id="button" style="margin-top: 30px;">
+                
+            </form>
+        </div>
+    </div>
+    
+    
+<!-- Blob  -->
+    <div class="blob">
+       
+    </div>
 
-</html>
+<!-- Blob -->
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+<?php
+    include("_footer.php");
+?>

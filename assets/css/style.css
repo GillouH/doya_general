@@ -1,0 +1,285 @@
+@import '../vendor/bootstrap-icons/bootstrap-icons.css';
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+}
+body {
+  min-height: 750px;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Poppins";
+  background: #fff;
+  position: relative;
+}
+
+nav {
+  max-width: 100%;
+  margin: 4px 0px 4px 0px;
+  padding: 16px 14px;
+  position: relative;
+  align-items: center;
+  top: 0;
+  min-height: 20px;
+}
+nav .logo {
+  position: absolute;
+  left: 10px;
+}
+nav .logo img {
+  width: 200px;
+  margin-top: 0px;
+}
+nav .soc {
+  position: absolute;
+  right: 35px;
+}
+nav .soc ul {
+  list-style: none;
+}
+nav .soc ul li {
+  display: inline;
+}
+nav .soc ul li a {
+  margin-left: 10px;
+  margin-top: 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #afaeae;
+}
+nav .soc ul li a:hover {
+  color: black;
+}
+
+#welcome {
+  width: 70%;
+  margin-left: 15%;
+  position: absolute;
+  top: 20%;
+  background: transparent;
+}
+#welcome h1 {
+  margin-top: -20px;
+  font-size: 60pt;
+  line-height: 80px;
+  background: transparent;
+}
+#welcome p {
+  margin-top: -30px;
+  background: transparent;
+}
+#welcome p a {
+  background: transparent;
+  font-style: italic;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 70px;
+  border-radius: 5px;
+  align-items: center;
+}
+.modal .modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modal .modal-content .close:hover {
+  color: #ff0000;
+}
+.modal input {
+  padding: 12px 28px;
+  display: flex;
+  margin-top: -20px;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+#login label i, #login input {
+  display: inline;
+  padding: 5px;
+}
+#login label i {
+  font-size: 25px;
+  text-align: center;
+  padding: 0px;
+  margin-top: 3px;
+  padding: 3px;
+  text-align: center;
+  line-height: 7px;
+}
+#login #psw, #login #user {
+  border: none;
+  font-size: 14px;
+  margin-left: 5px;
+  outline: none;
+  color: #afaeae;
+  margin-top: -10px;
+  border-bottom: 2px solid #66ff66;
+}
+#login #psw:hover, #login #psw:active, #login #user:hover, #login #user:active {
+  outline: none;
+  border-bottom: 2px solid #66ff66;
+}
+#login #psw label i, #login #psw #psw, #login #psw #user, #login #user label i, #login #user #psw, #login #user #user {
+  padding: 5px 15px;
+  margin: 5px;
+}
+
+.blob {
+  right: 0px;
+  top: 10%;
+  position: absolute;
+  z-index: -1;
+  width: 50vw;
+  height: 80vh;
+  background: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition-duration: 0.4s;
+  transform: scale(1.8);
+  margin-top: 20vh;
+  animation: blob 45s ease-in-out infinite;
+}
+@keyframes blob {
+  0%, 8% {
+    background: url(../images/Blob/Clay_Green0001.png);
+  }
+  8%, 16% {
+    background: url(../images/Blob/Clay_Green0002.png);
+  }
+  16%, 25% {
+    background: url(../images/Blob/Clay_Green0003.png);
+  }
+  25%, 33% {
+    background: url(../images/Blob/Clay_Green0004.png);
+  }
+  33%, 41% {
+    background: url(../images/Blob/Clay_Green0005.png);
+  }
+  41%, 50% {
+    background: url(../images/Blob/Clay_Green0006.png);
+  }
+  50%, 58% {
+    background: url(../images/Blob/Clay_Green0007.png);
+  }
+  58%, 66% {
+    background: url(../images/Blob/Clay_Green0008.png);
+  }
+  66%, 75% {
+    background: url(../images/Blob/Clay_Green0009.png);
+  }
+  75%, 83% {
+    background: url(../images/Blob/Clay_Green0010.png);
+  }
+  83%, 91% {
+    background: url(../images/Blob/Clay_Green0011.png);
+  }
+  91%, 100% {
+    background: url(../images/Blob/Clay_Green0012.png);
+  }
+  100%, 0% {
+    background: url(../images/Blob/Clay_Green0013.png);
+  }
+}
+
+button {
+  top: 70%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: black;
+  color: #f8f8ff;
+  border: 2px solid #000814;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  text-align: center;
+  outline: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 300ms ease;
+  font-style: bold;
+  border: 2px solid black;
+}
+button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #66ff66;
+  top: 100%;
+  left: 0;
+  transition: 500ms ease;
+}
+button:hover {
+  color: black;
+  border: 2px solid #66ff66;
+  letter-spacing: 3px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #66ff66;
+}
+
+#button {
+  color: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -40px;
+  left: 50%;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 300ms ease;
+  border: 2px solid #66ff66;
+  background: #66ff66;
+}
+#button:hover {
+  cursor: pointer;
+  border: #66ff66;
+}
+
+#footer {
+  width: 100%;
+  position: absolute;
+  height: 10vh;
+  background: #000000;
+  color: #fff;
+  top: 90vh;
+  padding: 5px 0px;
+  align-items: center;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
