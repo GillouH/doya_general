@@ -9,7 +9,7 @@ if ($is_form_submitted) {
 	$password = strip_tags($_POST["password"]);
 
 	// Import the function to connect to the DB and use it.
-	require $_SERVER["DOCUMENT_ROOT"] . "/php_db/connection.php";
+	require $_SERVER["DOCUMENT_ROOT"] . "/asserts/php/db/connection.php";
 	$pdo = connection_db();
 
 	// Prepares and executes an SQL statement.
@@ -27,7 +27,7 @@ if ($is_form_submitted) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include("_header.php"); ?>
+    <?php include("asserts/php/header.php"); ?>
     <title>Doya_General</title>
 </head>
 <body>
@@ -87,6 +87,6 @@ if ($is_form_submitted) {
 
         <!-- JavaScript -->
         <script src="assets/js/main.js"></script>
-		<?php include("_footer.php"); ?>
+		<?php include("asserts/php/footer.php"); ?>
 </body>
 </html>
