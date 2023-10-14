@@ -272,7 +272,7 @@ button:hover::before {
   border: #66ff66;
 }
 
-#footer {
+footer {
   width: 100%;
   position: absolute;
   height: 10vh;
