@@ -45,14 +45,14 @@ if ($is_form_submitted) {
 <h1>Join<br>The Creative<br>Community</h1>
     <!-- <br> -->
         <p>To Access this website You Must Have an Account, <a href="#">Sign Up</a>
-            
+
         </p>
     </div>
-    
-    
+
+
     <button id="loginButton"> Login </button>
 
-    
+
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeModal"> <i class="bi-x"></i></span>
@@ -68,15 +68,15 @@ if ($is_form_submitted) {
                         <input type="password" placeholder="*******" value="<?php echo $pseudo ? $password : ""; ?>" name="password" id="psw" size="20" required />
                     </p>
                     <input type="submit" value="Test credential !" id="button" style="margin-top: 30px;">
-                
+
             </form>
         </div>
     </div>
-    
-    
+
+
 <!-- Blob  -->
     <div class="blob">
-       
+
     </div>
 
 <!-- Blob -->

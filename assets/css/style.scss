@@ -1,15 +1,15 @@
 
-// Import SCSS file 
+// Import SCSS file
 @import 'media-queries','variables';
 @import '../vendor/bootstrap-icons/bootstrap-icons.css';
 
-// Importing Fonts 
+// Importing Fonts
 @font-face {
     font-family: 'Poppins', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
 
-// <<===== main Saas ======>> 
+// <<===== main Saas ======>>
 body{
     min-height: 750px;
     width: 100vw;
@@ -20,7 +20,7 @@ body{
     background: #fff;
     position: relative;
 }
- 
+
 nav{
     max-width: 100%;
     margin: 4px 0px 4px 0px;
@@ -55,14 +55,14 @@ nav{
                      &:hover{
                         color: $button-hover-text-color;
                      }
-                    
+
                 }
             }
         }
     }
 }
 
-// Welcome text 
+// Welcome text
 #welcome{
     width: 70%;
     margin-left: 15%;
@@ -75,7 +75,7 @@ nav{
         line-height: 80px;
         background: transparent;
     }
-    p{  
+    p{
         margin-top: -30px;
         background: transparent;
         a{
@@ -83,7 +83,7 @@ nav{
             font-style: italic;
         }
     }
-    
+
 }
 
 
@@ -125,7 +125,7 @@ nav{
     }
 }
 
-// Login Dialogue 
+// Login Dialogue
 
 #login {
     // position: flex;
@@ -184,7 +184,7 @@ nav{
     @keyframes blob {
         0%,8%{
             background: url(../images/Blob/Clay_Green0001.png);
-            
+
         }
         8%,16%{
             background: url(../images/Blob/Clay_Green0002.png);
@@ -225,7 +225,7 @@ nav{
     }
 }
 
-// Button 
+// Button
 button {
     top: 70%;
     left: 50%;
