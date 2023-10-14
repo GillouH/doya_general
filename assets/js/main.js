@@ -1,11 +1,11 @@
 
 // JS to show and hide the modal class
 
-const loginButton = document.getElementById("loginButton");
+const showLoginFormButton = document.getElementById("showLoginFormButton");
 const loginModal = document.getElementById("loginModal");
 const closeModal = document.getElementById("closeModal");
 
-loginButton.addEventListener("click", function() {
+showLoginFormButton.addEventListener("click", function() {
     loginModal.style.display = "block";
 });
 

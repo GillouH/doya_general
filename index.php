@@ -53,7 +53,7 @@ if ($is_form_submitted) {
         </div>
 
 
-        <button id="loginButton"> Login </button>
+        <button id="showLoginFormButton"> Login </button>
 
 
         <div id="loginModal" class="modal">
@@ -70,7 +70,7 @@ if ($is_form_submitted) {
                             <label for="psw"><i class="bi-key"></i> </label>
                             <input type="password" placeholder="*******" value="<?php echo $pseudo ? $password : ""; ?>" name="password" id="psw" size="20" required />
                         </p>
-                        <input type="submit" value="Test credential !" id="button" style="margin-top: 30px;">
+                        <input type="submit" value="Test credential !" id="loginButton" style="margin-top: 30px;">
 
                 </form>
             </div>
