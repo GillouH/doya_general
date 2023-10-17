@@ -42,16 +42,12 @@ if ($is_form_submitted) {
             </ul>
         </div>
     </nav>
-    <!-- content  -->
 
+    <!-- content  -->
     <div id="welcome">
         <h1>Join<br>The Creative<br>Community</h1>
-        <!-- <br> -->
-        <p>To Access this website You Must Have an Account, <a href="#">Sign Up</a>
-
-            </p>
+        <p>To access this website you must have an account, <a href="#">Sign Up</a></p>
     </div>
-
 
     <button id="showLoginFormButton"> Login </button>
 
@@ -59,9 +55,8 @@ if ($is_form_submitted) {
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <span class="close" id="closeModal"> <i class="bi-x"></i></span>
-            <h2 style="text-align: center;margin-top: -20px;" >Login</h2><br>
             <form method="post" id="login">
-                <legend style="margin-top: -20px;">Guess a Username and Password !</legend>
+                <legend><h2>Login</h2></legend>
                 <p>
                     <label for="user"><i class="bi-person"></i></label>
                     <input type="text" placeholder="Username" value="<?php echo $pseudo ? $pseudo : ""; ?>" name="pseudo" id="user" size="20" maxlength="10" required autofocus />
@@ -70,23 +65,18 @@ if ($is_form_submitted) {
                     <label for="psw"><i class="bi-key"></i> </label>
                     <input type="password" placeholder="*******" value="<?php echo $pseudo ? $password : ""; ?>" name="password" id="psw" size="20" required />
                 </p>
-                <input type="submit" value="Test credential !" id="loginButton" style="margin-top: 30px;">
-
+                <input type="submit" value="Test credential !" id="loginButton">
             </form>
         </div>
     </div>
 
 
     <!-- Blob  -->
-    <div class="blob">
-
-        </div>
-
-    <!-- Blob -->
-
+    <div class="blob"></div>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
+
     <?php include($_SERVER["DOCUMENT_ROOT"] . "/assets/php/footer.php"); ?>
 </body>
 </html>

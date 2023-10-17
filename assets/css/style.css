@@ -89,7 +89,7 @@ nav .soc ul li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  padding: 70px;
+  padding: 10px 70px 70px 70px;
   border-radius: 5px;
   align-items: center;
 }
@@ -251,7 +251,7 @@ button:hover::before {
 #loginButton {
   color: black;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: -40px;
+  margin-top: 30px;
   left: 50%;
   width: 200px;
   height: 50px;
@@ -283,3 +283,7 @@ footer {
   align-items: center;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
+
+h2 {
+    text-align: center;
+}
